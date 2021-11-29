@@ -19,10 +19,21 @@ function checkTwoIntegers(a, b) {
 }
 
 /* 3. Create a function to remove a character at a specified position from a given string: pass the position and the string as parameters, return the new string. */
+function homework3() {
 
+}
 
 /* 4. Create a function to find and return the largest of three given integers. */
-
+function homework3(a, b) {
+    if (a > b) {
+        console.log(a + "is largest one")
+        return a
+    }
+    else {
+        console.log(b + "is largest one")
+        return b
+    }
+}
 
 /* 5. Create a function to check if two numbers are in the range 40-60 or 70-100.
     Return `true` if they do, return `false` if one (or both) don't. */
