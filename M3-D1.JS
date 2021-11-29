@@ -53,10 +53,22 @@ function homework5(a, b) {
 /* 6. Create a function to create a new string composed of a specified number of copies of a given string.
     Pass the string and the number of copies as parameters. */
 
+function homework6() {
+
+}
 
 /* 7. Create a function to display the city name if the string begins with "Los" or "New".
     Pass the city name as a parameter. Return `false` if they start with a different string. */
 
+function homework7(a) {
+    if (a.substring(0, 3) == "Los" || a.substring(0, 3) == "New") {
+        return true
+    }
+    else {
+        return false
+    }
+}
+console.log(homework7(Los))
 
 /* 8. Create a function to calculate and return the sum of all elements from an array with 3 elements.
     Pass the array as a parameter. */
