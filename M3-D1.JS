@@ -1,7 +1,7 @@
 /* 1. Create a function to calculate the sum of the two given integers. If the two values are the same, return triple their sum. */
 function sumOfTwoIntegers(a, b) {
     if (a === b) {
-        console.log(parseInt((a + b) * 3))
+        console.log((parseInt(a + b) * 3))
     }
     else {
         console.log(a + b)
