@@ -189,7 +189,14 @@ function findIndexBiggestNumber(arr) {
 }
 
 /* 14. Create a function to find and return the largest **even** number from an array of integers that is passed a parameter. */
-
+function findIndexBiggestNumber(arr) {
+    if ((Math.max(...arr)) % 2 == 0) {
+        return true
+    }
+    else {
+        return false
+    }
+}
 
 /* 15. Create a function to check from two given integers (passed as parameters) if one is positive and the other is negative.
     Return `true` if that's the case, return `false` if it's not. */
