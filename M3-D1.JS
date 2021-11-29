@@ -72,8 +72,13 @@ console.log(homework7(Los))
 
 /* 8. Create a function to calculate and return the sum of all elements from an array with 3 elements.
     Pass the array as a parameter. */
-
-
+function homework8(array) {
+    let sum = 0
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+    console.log(sum);
+}
 /* 9. Create a function to test if an array of lenght 2 contains 1 OR 3.
     Return `true` is it does, `false` if it doesn't. */
 
