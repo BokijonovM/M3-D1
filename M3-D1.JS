@@ -38,6 +38,17 @@ function homework3(a, b) {
 /* 5. Create a function to check if two numbers are in the range 40-60 or 70-100.
     Return `true` if they do, return `false` if one (or both) don't. */
 
+function homework5(a, b) {
+    if (40 < a < 60 || 70 < a < 100) {
+        return true
+    }
+    else if (40 < b < 60 || 70 < b < 100) {
+        return true
+    }
+    else {
+        return false
+    }
+}
 
 /* 6. Create a function to create a new string composed of a specified number of copies of a given string.
     Pass the string and the number of copies as parameters. */
