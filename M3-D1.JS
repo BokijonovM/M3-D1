@@ -184,7 +184,9 @@ function homework12(a) {
 }
 
 /* 13. Create a function to find and return the index of the greatest element of a given array of integers that you passed as a parameter. */
-
+function findIndexBiggestNumber(arr) {
+    return Math.max(...arr)
+}
 
 /* 14. Create a function to find and return the largest **even** number from an array of integers that is passed a parameter. */
 
