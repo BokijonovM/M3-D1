@@ -19,9 +19,20 @@ function checkTwoIntegers(a, b) {
 }
 
 /* 3. Create a function to remove a character at a specified position from a given string: pass the position and the string as parameters, return the new string. */
-function homework3() {
+let randomString = "I'm a string"
+
+function homework3(string, indexToRemove) {
+    let arrayOfChars = string.split("")
+    arrayOfChars.splice(indexToRemove, 1)
+    let newStringJoined = arrayOfChars.join()
+    let stringWithoutComa = newStringJoined.replace(/,/g, '')
+
+    return stringWithoutComa
 
 }
+
+console.log(homework3(randomString, 2)) // Should remove m
+
 
 /* 4. Create a function to find and return the largest of three given integers. */
 function homework3(a, b, c) {
@@ -57,9 +68,22 @@ function homework5(a, b) {
 /* 6. Create a function to create a new string composed of a specified number of copies of a given string.
     Pass the string and the number of copies as parameters. */
 
-function homework6() {
+function copies(string, numberOfCopies) {
+    let newString = ''
+    if (numberOfCopies <= 0) {
+        return 'Enter a positive number'
 
+    } else {
+        for (let i = 0; i < numberOfCopies; i++) {
+            newString = newString + string
+        }
+    }
+    return newString
 }
+
+console.log(copies('abcd', 3))
+
+
 
 /* 7. Create a function to display the city name if the string begins with "Los" or "New".
     Pass the city name as a parameter. Return `false` if they start with a different string. */
@@ -141,7 +165,23 @@ console.log(findLongestStr(['aaaaa', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb', 'cccccccc
 
     Pass the angle as a parameter.
 */
-
+function homework12(a) {
+    if (0 < a < 90) {
+        console.log("Given angle is acute")
+    }
+    else if (a == 90) {
+        console.log("Given angle is right")
+    }
+    else if (90 < a < 180) {
+        console.log("Given angle is obtuse")
+    }
+    else if (a == 180) {
+        console.log("Given angle is straight")
+    }
+    else {
+        console.log("This is not angle please enter between 0 and 180")
+    }
+}
 
 /* 13. Create a function to find and return the index of the greatest element of a given array of integers that you passed as a parameter. */
 
