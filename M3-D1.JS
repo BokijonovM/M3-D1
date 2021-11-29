@@ -119,6 +119,18 @@ function homework10(arr) {
 
 /* 11. Create a function to find the longest string from a given array of strings.
     Pass the array as parameter and return the longest string. */
+function findLongestStr(arr) {
+    let longestStr = ''
+    arr.forEach(element => {
+        if (element.length > longestStr.length)
+            longestStr = element
+
+    });
+
+    return longestStr
+}
+
+console.log(findLongestStr(['aaaaa', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb', 'ccccccccccccc']))
 
 
 /* 12. Create a function to find the types of a given angle:
