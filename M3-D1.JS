@@ -24,14 +24,18 @@ function homework3() {
 }
 
 /* 4. Create a function to find and return the largest of three given integers. */
-function homework3(a, b) {
-    if (a > b) {
+function homework3(a, b, c) {
+    if (a > b > c) {
         console.log(a + "is largest one")
         return a
     }
-    else {
+    else if (b < a < c) {
         console.log(b + "is largest one")
         return b
+    }
+    else {
+        console.log(c + "is largest one")
+        return c
     }
 }
 
