@@ -226,6 +226,14 @@ console.log(task16("hello"))
 
 /* 17. Create a function to calculate the sum of two integers (passed as parameters).
     If the sum is in the 50-80 range, return `65`, otherwise, return `80`. */
+function task17(a, b) {
+    if (((a + b) > 50) && ((a + b) < 80)) {
+        return '65'
+    }
+    else {
+        return '80'
+    }
+}
 
 
 /* 18. Create a function to convert a number (passed as a parameter) into a string, basing yourself on this example:
