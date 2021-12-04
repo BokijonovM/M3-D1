@@ -36,11 +36,11 @@ console.log(homework3(randomString, 2)) // Should remove m
 
 /* 4. Create a function to find and return the largest of three given integers. */
 function homework3(a, b, c) {
-    if (a > b > c) {
+    if (a > b && a > c) {
         console.log(a + "is largest one")
         return a
     }
-    else if (b < a < c) {
+    else if (b > a && b > c) {
         console.log(b + "is largest one")
         return b
     }
@@ -54,10 +54,10 @@ function homework3(a, b, c) {
     Return `true` if they do, return `false` if one (or both) don't. */
 
 function homework5(a, b) {
-    if ((40 < a < 60) || 70 < a < 100) {
+    if ((a > 40 && a < 60) || (a > 70 && a < 100)) {
         return true
     }
-    else if (40 < b < 60 || 70 < b < 100) {
+    else if ((b > 40 && b < 60) || (b > 70 && b < 100)) {
         return true
     }
     else {
@@ -200,6 +200,15 @@ function findIndexBiggestNumber(arr) {
 
 /* 15. Create a function to check from two given integers (passed as parameters) if one is positive and the other is negative.
     Return `true` if that's the case, return `false` if it's not. */
+
+function task15(a, b) {
+    if ((a > 0 && b < 0) || (b > 0 && a < 0)) {
+        return true
+    }
+    else {
+        return false
+    }
+}
 
 
 /* 16. Create a function to create and return a new string where the first 3 characters and in lower case and the others are in upper case.
