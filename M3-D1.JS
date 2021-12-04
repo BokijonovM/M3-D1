@@ -213,7 +213,16 @@ function task15(a, b) {
 
 /* 16. Create a function to create and return a new string where the first 3 characters and in lower case and the others are in upper case.
     If the string's length is less than 3, convert the whole string into uppercase. Pass the original string as a parameter. */
-
+function task16(string) {
+    if (string.length < 3) {
+        console.log(string.toUpperCase())
+    }
+    else {
+        console.log((string.substring(0, 3)).toLowerCase())
+        console.log((string.substring(3, string.length)).toUpperCase())
+    }
+}
+console.log(task16("hello"))
 
 /* 17. Create a function to calculate the sum of two integers (passed as parameters).
     If the sum is in the 50-80 range, return `65`, otherwise, return `80`. */
