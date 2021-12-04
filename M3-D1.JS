@@ -243,6 +243,22 @@ function task17(a, b) {
     If the number does not have 3,5, or 7, return the original number.
     ⚠️ The factor is an integer which evenly divides a number without leaving a remainder. One number can have more than one factor, in that case you should return both names.
 Ex. 15 has both 3 and 5 has factors: the function will return `DiegoRiccardo` */
+function task18(arr) {
+    if (arr.find(element => element == 3)) {
+        return 'Diego'
+    }
+    else if (arr.find(element => element == 5)) {
+        return 'Riccardo'
+    }
+    else if (arr.find(element => element == 7)) {
+        return 'Stefano'
+    }
+    else {
+        return arr
+    }
+
+}
+console.log(task18([1, 2, 3, 4])) // returns 'Diego'
 
 
 /* 19. Create a function that that takes a phrase as a parameter and returns its acronym.
