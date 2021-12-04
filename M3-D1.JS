@@ -54,7 +54,7 @@ function homework3(a, b, c) {
     Return `true` if they do, return `false` if one (or both) don't. */
 
 function homework5(a, b) {
-    if (40 < a < 60 || 70 < a < 100) {
+    if ((40 < a < 60) || 70 < a < 100) {
         return true
     }
     else if (40 < b < 60 || 70 < b < 100) {
